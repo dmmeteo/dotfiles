@@ -1,0 +1,24 @@
+[user]
+    name = Dmitry Sichkar
+    email = dmmeteo@gmail.com
+[core]
+    editor = vim
+    excludesfile = /Users/new/.gitignore_global
+[diff]
+    tool = vim -d
+[alias]
+    st = status
+    br = branch
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    co = checkout
+    ci = commit
+    type = cat-file -t
+    dump = cat-file -p
+[color]
+    ui = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
