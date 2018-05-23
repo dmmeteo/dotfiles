@@ -3,7 +3,6 @@
     email = dmmeteo@gmail.com
 [core]
     editor = vim
-    excludesfile = /Users/new/.gitignore_global
 [diff]
     tool = vim -d
 [alias]
@@ -16,9 +15,9 @@
     dump = cat-file -p
 [color]
     ui = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+        branch = true
+        diff = true
+        interactive = true
+        status = true
+[push]
+        default = matching

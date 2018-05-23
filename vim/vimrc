@@ -1,0 +1,61 @@
+call plug#begin('~/.vim/plugged')
+
+" Nerdtree
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Color schemes
+Plug 'morhetz/gruvbox'
+Plug 'chriskempson/tomorrow-theme'
+
+" Powerline alternative
+Plug 'vim-airline/vim-airline'
+
+" fugitive.vim: a Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+
+" Auto Pairsby by MIAO JIANG
+Plug 'jiangmiao/auto-pairs'
+
+" Finder for Vim.
+Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
+
+" Vim motions on speed!
+Plug 'easymotion/vim-easymotion'
+
+call plug#end()
+
+" Custom settings
+syntax on
+colorscheme gruvbox
+set background=dark
+set encoding=utf-8
+
+" VCS tracker settings
+set updatetime=400
+let g:signify_vcs_list = [ 'git', 'hg' ]
+let g:signify_realtime = 1
+
+" mappings:
+        imap jk <esc>
+        let g:mapleader = "\<Space>"
+        " easymotion
+        map <Leader> <Plug>(easymotion-prefix)
+        " NerdTree settings
+        let NERDTreeIgnore=['\.pyc$', '\~$']
+        map <C-n> :NERDTreeToggle<CR>
+        " vcs jumping
+        nmap gj <plug>(signify-next-hunk)
+        nmap gk <plug>(signify-prev-hunk)
+
+" line numbers & tabs to spaces
+set number
+set expandtab 
+
+" backgroun search words
+set hlsearch
+set incsearch
+
+" tabs size
+set tabstop=4
