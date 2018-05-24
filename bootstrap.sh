@@ -11,6 +11,7 @@ sudo rm -rf ~/.vim > /dev/null 2>&1
 sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf.local > /dev/null 2>&1
+sudo rm -rf ~/.functions > /dev/null 2>&1
 # sudo rm -rf ~/.bashrc > /dev/null 2>&1
 # sudo rm -rf ~/.zsh_prompt > /dev/null 2>&1
 # sudo rm -rf ~/.gitconfig > /dev/null 2>&1
@@ -21,6 +22,7 @@ sudo rm -rf ~/.tmux.conf.local > /dev/null 2>&1
 
 # Create symlinks in the home folder
 ln -sf $DOTFILES/zsh/zshrc ~/.zshrc
+ln -sf $DOTFILES/zsh/functions ~/.functions
 ln -sf $DOTFILES/git/gitconfig ~/.gitconfig
 ln -sf $DOTFILES/git/gitignore_global ~/.gitignore_global
 ln -sf $DOTFILES/hg/hgrc ~/.hgrc
