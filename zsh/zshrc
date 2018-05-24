@@ -9,7 +9,7 @@ if [[ ! -d $ZSH ]] || [[ -z $(ls $ZSH) ]]; then
   git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
   git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
-  cp -rn $HOME/dotfiles/zsh/themes/ $HOME/.oh-my-zsh/themes/
+  cp -rn $HOME/dotfiles/zsh/themes/ $HOME/.oh-my-zsh/custom/themes/
 fi
 
 
@@ -47,3 +47,4 @@ fi
 
 # Custom functions
 source $HOME/.functions
+
