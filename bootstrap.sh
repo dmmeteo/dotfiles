@@ -1,4 +1,8 @@
 #!/bin/sh
+# Install packages
+# ...
+
+
 DOTFILES=$HOME/dotfiles
 
 # Delete existing dot files and folders
@@ -12,12 +16,14 @@ sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf.local > /dev/null 2>&1
 sudo rm -rf ~/.functions > /dev/null 2>&1
+sudo rm -rf ~/.gitconfig > /dev/null 2>&1
+sudo rm -rf ~/.gitignore_global > /dev/null 2>&1
+sudo rm -rf ~/.hgrc > /dev/null 2>&1
+sudo rm -rf ~/.hgignore_global > /dev/null 2>&1
+sudo rm -rf ~/.oh-my-zsh > /dev/null 2>&1
+sudo rm -rf ~/.antigen > /dev/null 2>&1
+sudo rm -rf ~/antigen.zsh > /dev/null 2>&1
 # sudo rm -rf ~/.bashrc > /dev/null 2>&1
-# sudo rm -rf ~/.zsh_prompt > /dev/null 2>&1
-# sudo rm -rf ~/.gitconfig > /dev/null 2>&1
-# sudo rm -rf ~/.antigen > /dev/null 2>&1
-# sudo rm -rf ~/.antigen.zsh > /dev/null 2>&1
-# sudo rm -rf ~/.tigrc > /dev/null 2>&1
 # sudo rm -rf ~/.config > /dev/null 2>&1
 
 # Create symlinks in the home folder
@@ -32,7 +38,5 @@ ln -sf $DOTFILES/vim/vimrc ~/.vimrc
 ln -sf $DOTFILES/tmux/tmux.conf ~/.tmux.conf
 ln -sf $DOTFILES/tmux/tmux.conf.local ~/.tmux.conf.local
 # ln -sf $DOTFILES/bashrc ~/.bashrc
-# ln -sf $DOTFILES/linux-tmux ~/.tmux
-# ln -sf $DOTFILES/zsh/zsh_prompt ~/.zsh_prompt
-# ln -sf $DOTFILES/zsh/zshrc ~/.zshrc
 # ln -sf $DOTFILES/config ~/.config
+

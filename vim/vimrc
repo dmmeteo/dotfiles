@@ -1,5 +1,10 @@
-call plug#begin('~/.vim/plugged')
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
 
+call plug#begin('~/.vim/plugged')
 " Nerdtree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -24,6 +29,8 @@ Plug 'rking/ag.vim'
 " Vim motions on speed!
 Plug 'easymotion/vim-easymotion'
 
+" Black
+Plug 'ambv/black'
 call plug#end()
 
 " Custom settings
@@ -43,7 +50,8 @@ let g:signify_realtime = 1
         " easymotion
         map <Leader> <Plug>(easymotion-prefix)
         " NerdTree settings
-        let NERDTreeIgnore=['\.pyc$', '\~$']
+        let NERDTreeShowHidden=1
+        let NERDTreeIgnore = ['\.pyc$', '\.git$', '\.swp$', '\~$', '\.idea$']
         map <C-n> :NERDTreeToggle<CR>
         " vcs jumping
         nmap gj <plug>(signify-next-hunk)
@@ -57,5 +65,25 @@ set expandtab
 set hlsearch
 set incsearch
 
-" tabs size
-set tabstop=4
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Python specific wraps & indents
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
+" HTML, JS, CSS specific settings
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+
+" Black settings
+let g:black_linelength=79 
