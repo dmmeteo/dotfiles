@@ -2,7 +2,7 @@ if [[ ! -f ~/antigen.zsh ]]; then
         curl -L git.io/antigen > antigen.zsh
 fi
 
-source ~/.functions
+source ~/dotfiles/zsh/functions
 source ~/antigen.zsh
 
 # Load the oh-my-zsh's library.
@@ -26,3 +26,5 @@ antigen theme denysdovhan/spaceship-prompt
 
 # Tell Antigen that you're done.
 antigen apply
+
+source ~/dotfiles/zsh/nyancat.sh

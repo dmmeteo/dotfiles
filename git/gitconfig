@@ -3,6 +3,7 @@
     email = dmmeteo@gmail.com
 [core]
     editor = vim
+    excludesfile = ~/.gitignore_global
 [diff]
     tool = vim -d
 [alias]

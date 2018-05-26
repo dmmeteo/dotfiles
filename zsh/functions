@@ -62,3 +62,7 @@ function o() {
 	fi;
 }
 
+# Create .gitignore files via templates
+function gitignore() {
+        # pass...
+}
