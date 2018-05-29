@@ -27,4 +27,16 @@ antigen theme denysdovhan/spaceship-prompt
 # Tell Antigen that you're done.
 antigen apply
 
+# Aliases
+alias zshconfig="mate ~/.zshrc"
+alias dc='docker-compose'
+alias dm='docker-machine'
+alias cat="pygmentize -g"
+alias ccat="/bin/cat $*" # for cases when you need plain `cat`
+if [ "$(uname)" = "Darwin" ]; then
+    alias ls='ls -FHG'
+else
+    alias ls='ls -F --color'
+fi
+
 source ~/dotfiles/zsh/nyancat.sh
