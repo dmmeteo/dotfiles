@@ -28,7 +28,6 @@ antigen theme denysdovhan/spaceship-prompt
 antigen apply
 
 # Aliases
-alias zshconfig="mate ~/.zshrc"
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias cat="pygmentize -g"
