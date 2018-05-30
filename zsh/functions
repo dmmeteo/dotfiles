@@ -62,7 +62,7 @@ function o() {
 	fi;
 }
 
-# Create .gitignore files via templates
-function gitignore() {
-        # pass...
+# Create .gitignore files https://www.gitignore.io/docs#-use-command-line
+function gi() {
+        curl -L -s https://www.gitignore.io/api/$@ ;
 }
