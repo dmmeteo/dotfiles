@@ -1,9 +1,9 @@
 #!/bin/sh
-# Install packages
-# ...
-
-
 DOTFILES=$HOME/dotfiles
+
+
+# Install packages
+source $DOTFILES/install/packages.sh
 
 # Delete existing dot files and folders
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
@@ -40,3 +40,5 @@ ln -sf $DOTFILES/tmux/tmux.conf.local ~/.tmux.conf.local
 # ln -sf $DOTFILES/bashrc ~/.bashrc
 # ln -sf $DOTFILES/config ~/.config
 
+# Install antigen
+curl -L git.io/antigen > antigen.zsh
