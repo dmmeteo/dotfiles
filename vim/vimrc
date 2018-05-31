@@ -15,6 +15,9 @@ Plug 'chriskempson/tomorrow-theme'
 " Powerline alternative
 Plug 'vim-airline/vim-airline'
 
+" Jedi to Python autocompletion
+Plug 'davidhalter/jedi-vim'
+
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'

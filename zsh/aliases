@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Docker
+alias dc='docker-compose'
+alias dm='docker-machine'
+alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+
+# Virtualenvwrapper
+alias mkve="mkvirtualenv"
+alias ave="workon"
+alias dve="deactivate"
+alias rmve="rmvirtualenv"   # remove virtualenv
+alias lsve="lsvirtualenv"   # list virtualenvs
+
+# Other
+alias cat="pygmentize -g"
+alias ccat="/bin/cat $*" # for cases when you need plain `cat`
+if [ "$(uname)" = "Darwin" ]; then
+    alias ls='ls -FHG'
+else
+    alias ls='ls -F --color'
+fi
+alias todo="todolist"
