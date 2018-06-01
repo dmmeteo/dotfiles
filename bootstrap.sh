@@ -3,7 +3,7 @@ DOTFILES=$HOME/dotfiles
 
 
 # Install packages
-source $DOTFILES/install/packages.sh
+bash ~/dotfiles/install/packages.sh
 
 # Delete existing dot files and folders
 sudo rm -rf ~/.zshrc > /dev/null 2>&1

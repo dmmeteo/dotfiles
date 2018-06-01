@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Install Brew
+# Install packages
+# TODO packages install list
 if type -p brew > /dev/null; then
     echo "Brew is already installed..."
 else
@@ -10,8 +11,8 @@ else
             exit
             ;;
         linux*)
-            alias installer="sudo apt install -y"
-            installer python-pip
+            installer="sudo apt install -y"
+            $installer python-pip
             ;;
         darwin*)
             ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -23,17 +24,10 @@ else
 fi
 
 # Install packages via Brew
-installer \
-        zsh \
-        vim \
-        git \
-        curl \
-        tree \
-        htop \
-        tmux \
-        node \
-        figlet \
-        yarn
+echo "Start install packages"
+$installer zsh vim git curl tree htop tmux node figlet yarn
+
+echo "Fin install packages"
 
 # Install packages via pip
 sudo pip install \
