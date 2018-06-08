@@ -6,8 +6,7 @@ function mk() {
 }
 
 function run() {
-  # todo normal C runner
-  gcc "$@" -o "$@" && $@
+  make $@ && $@
 }
 
 # Determine size of a file or total size of a directory
