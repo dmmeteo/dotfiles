@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Declarete packages
-declare -a packages=(zsh vim tree htop tmux node figlet yarn)
+declare -a packages=(zsh vim tree htop tmux node figlet yarn go install build-essential)
 
 # Install packages
 if type -p brew > /dev/null; then
@@ -15,6 +15,7 @@ else
         linux*)
             packages+="python-pip"
             sudo apt install -y $packages
+            sudo snap install --classic go
             ;;
         darwin*)
             ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
