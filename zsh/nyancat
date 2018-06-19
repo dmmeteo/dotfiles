@@ -1,4 +1,5 @@
 #!/bin/sh
+# TODO need refactor to C or go
 
 
 a='\033[0;104m  '     # ,
