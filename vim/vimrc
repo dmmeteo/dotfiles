@@ -53,9 +53,12 @@ let g:signify_realtime = 1
         " easymotion
         map <Leader> <Plug>(easymotion-prefix)
         " NerdTree settings
+        " base bindings: https://stackoverflow.com/a/25254470/9501552
         let NERDTreeShowHidden=1
         let NERDTreeIgnore = ['\.pyc$', '\.git$', '\.swp$', '\~$', '\.idea$']
         map <C-n> :NERDTreeToggle<CR>
+        let g:NERDTreeDirArrowExpandable = '▸'
+        let g:NERDTreeDirArrowCollapsible = '▾'
         " vcs jumping
         nmap gj <plug>(signify-next-hunk)
         nmap gk <plug>(signify-prev-hunk)
