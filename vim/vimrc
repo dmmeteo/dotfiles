@@ -53,7 +53,6 @@ let g:signify_realtime = 1
         " easymotion
         map  <Leader> <Plug>(easymotion-prefix)
         map  <Leader>f <Plug>(easymotion-bd-f)
-        map  <Leader>f <Plug>(easymotion-bd-f)
         nmap <Leader>f <Plug>(easymotion-overwin-f)
         map  n <Plug>(easymotion-next)
         map  N <Plug>(easymotion-prev)
