@@ -32,3 +32,4 @@ antigen theme denysdovhan/spaceship-prompt
 
 # Tell Antigen that you're done.
 antigen apply
+export PATH="/usr/local/opt/openssl/bin:$PATH"

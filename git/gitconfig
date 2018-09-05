@@ -1,24 +1,29 @@
 [user]
-    name = Dmitry Sichkar
-    email = dmmeteo@gmail.com
+name = Dmitry Sichkar
+email = dmmeteo@gmail.com
+
 [core]
-    editor = vim
-    excludesfile = ~/.gitignore_global
+editor = vim
+excludesfile = ~/.gitignore_global
+
 [diff]
-    tool = vim -d
+tool = vim -d
+
 [alias]
-    st = status
-    br = branch
-    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-    co = checkout
-    ci = commit
-    type = cat-file -t
-    dump = cat-file -p
+st = status
+br = branch
+hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+co = checkout
+ci = commit
+type = cat-file -t
+dump = cat-file -p
+
 [color]
-    ui = true
-        branch = true
-        diff = true
-        interactive = true
-        status = true
+ui = true
+branch = true
+diff = true
+interactive = true
+status = true
+
 [push]
-        default = matching
+default = matching
