@@ -32,7 +32,8 @@ sudo pip install \
                 black \
                 jedi \
                 flake8 \
-                pygments 
+                pygments \ 
+                sudo pip install pep8 flake8 pyflakes isort yapf
 
 # Install node.js packages via Yarn
 yarn global add create-react-native-app

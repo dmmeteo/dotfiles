@@ -18,6 +18,12 @@ Plug 'vim-airline/vim-airline'
 " Jedi to Python autocompletion
 Plug 'davidhalter/jedi-vim'
 
+" Automatically sort python imports
+Plug 'fisadev/vim-isort'
+
+" Better autocompletion
+Plug 'Shougo/neocomplcache.vim'
+
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
@@ -48,30 +54,33 @@ let g:signify_vcs_list = [ 'git', 'hg' ]
 let g:signify_realtime = 1
 
 " mappings:
-        imap jk <esc>
-        let g:mapleader = "\<Space>"
-        " easymotion
-        map  <Leader> <Plug>(easymotion-prefix)
-        map  f <Plug>(easymotion-bd-f)
-        nmap <Leader>f <Plug>(easymotion-overwin-f)
-        map  n <Plug>(easymotion-next)
-        map  N <Plug>(easymotion-prev)
-        map <Leader>l <Plug>(easymotion-lineforward)
-        map <Leader>j <Plug>(easymotion-j)
-        map <Leader>k <Plug>(easymotion-k)
-        map <Leader>h <Plug>(easymotion-linebackward)
-        let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+imap jk <esc>
+let g:mapleader = "\<Space>"
+" easymotion
+map  <Leader> <Plug>(easymotion-prefix)
+map  f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 
-        " NerdTree settings
-        " base bindings: https://stackoverflow.com/a/25254470/9501552
-        let NERDTreeShowHidden=1
-        let NERDTreeIgnore = ['\.pyc$', '\.git$', '\.swp$', '\~$', '\.idea$']
-        map <C-n> :NERDTreeToggle<CR>
-        let g:NERDTreeDirArrowExpandable = '▸'
-        let g:NERDTreeDirArrowCollapsible = '▾'
-        " vcs jumping
-        nmap gj <plug>(signify-next-hunk)
-        nmap gk <plug>(signify-prev-hunk)
+" NerdTree settings
+" base bindings: https://stackoverflow.com/a/25254470/9501552
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$', '\.git$', '\.swp$', '\~$', '\.idea$']
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+" vcs jumping
+nmap gj <plug>(signify-next-hunk)
+nmap gk <plug>(signify-prev-hunk)
+
+" save as sudo
+ca w!! w !sudo tee "%"
 
 " line numbers & tabs to spaces
 set number
@@ -101,5 +110,48 @@ au BufNewFile,BufRead *.js,*.html,*.css
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
 
+" Syntastic ------------------------------
+" show list of errors and warnings on the current file
+nmap <leader>e :Errors<CR>
+" check also when just opened the file
+let g:syntastic_check_on_open = 1
+" don't put icons on the sign column (it hides the vcs status icons of signify)
+let g:syntastic_enable_signs = 1
+" custom icons (enable them if you use a patched font, and enable the previous
+" setting)
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_style_error_symbol = '✗'
+let g:syntastic_style_warning_symbol = '⚠'
+
+" Jedi-vim ------------------------------
+" All these mappings work only for python code:
+" Go to definition
+let g:jedi#goto_command = ',d'
+" Find ocurrences
+let g:jedi#usages_command = ',o'
+" Find assignments
+let g:jedi#goto_assignments_command = ',a'
+" Go to definition in new tab
+nmap ,D :tab split<CR>:call jedi#goto()<CR>
+
+" NeoComplCache ------------------------------
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_ignore_case = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_auto_select = 1
+let g:neocomplcache_enable_fuzzy_completion = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_fuzzy_completion_start_length = 1
+let g:neocomplcache_auto_completion_start_length = 1
+let g:neocomplcache_manual_completion_start_length = 1
+let g:neocomplcache_min_keyword_length = 1
+let g:neocomplcache_min_syntax_length = 1
+" complete with workds from any opened file
+let g:neocomplcache_same_filetype_lists = {}
+let g:neocomplcache_same_filetype_lists._ = '_'
+
 " Black settings
 let g:black_linelength=79 
+
