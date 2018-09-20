@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Declarete packages
-declare -a packages=(zsh vim tree htop tmux node figlet yarn go install build-essential)
+declare -a packages=(zsh vim tree htop tmux node figlet yarn go install build-essential hyperfine)
 
 # Install packages
 if type -p brew > /dev/null; then
