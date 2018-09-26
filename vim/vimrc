@@ -40,6 +40,10 @@ Plug 'easymotion/vim-easymotion'
 
 " Black
 Plug 'ambv/black'
+
+" Python-mode
+Plug 'python-mode/python-mode', {'branch': 'develop'}
+
 call plug#end()
 
 " Custom settings
