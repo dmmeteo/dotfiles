@@ -159,3 +159,30 @@ let g:neocomplcache_same_filetype_lists._ = '_'
 " Black settings
 let g:black_linelength=79 
 
+" >>> Python-mode settings
+" TODO fix indents
+let g:pymode_rope = 1
+let g:pymode_rope_autoimport=1
+let g:pymode_python = 'python3'
+
+"Linting
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+ 
+" Auto check on save
+let g:pymode_lint_write = 1
+
+" Support virtualenv
+let g:pymode_virtualenv = 1
+
+" syntax highlighting
+let g:pymode_syntax = 0
+
+" Don't autofold code
+let g:pymode_folding = 0
+
+" Run Python Code
+let g:pymode_run = 1
+let g:pymode_rope_goto_definition_bind = "<C-]>"
+let g:pymode_run_bind = "<C-b>"
+
