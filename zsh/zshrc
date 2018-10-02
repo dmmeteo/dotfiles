@@ -1,5 +1,5 @@
 # Run zsh via antigen
-source ~/antigen.zsh
+source ~/.antigen.zsh
 
 source ~/dotfiles/zsh/nyancat
 source ~/dotfiles/zsh/aliases

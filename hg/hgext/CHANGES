@@ -1,0 +1,7 @@
+Changelog
+---------
+
+- Don't complain if the changelog file is not present.
+
+- The outdenting algorithm was improved for line continuations and
+  rst code blocks in list items.

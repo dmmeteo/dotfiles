@@ -3,7 +3,7 @@ DOTFILES=$HOME/dotfiles
 
 
 # Install packages
-bash ~/dotfiles/install/packages.sh
+# bash ~/dotfiles/install/packages.sh
 
 # Delete existing dot files and folders
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
@@ -20,9 +20,10 @@ sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 sudo rm -rf ~/.gitignore_global > /dev/null 2>&1
 sudo rm -rf ~/.hgrc > /dev/null 2>&1
 sudo rm -rf ~/.hgignore_global > /dev/null 2>&1
+sudo rm -rf ~/.hgext > /dev/null 2>&1
 sudo rm -rf ~/.oh-my-zsh > /dev/null 2>&1
 sudo rm -rf ~/.antigen > /dev/null 2>&1
-sudo rm -rf ~/antigen.zsh > /dev/null 2>&1
+sudo rm -rf ~/.antigen.zsh > /dev/null 2>&1
 # sudo rm -rf ~/.bashrc > /dev/null 2>&1
 # sudo rm -rf ~/.config > /dev/null 2>&1
 
@@ -33,6 +34,7 @@ ln -sf $DOTFILES/git/gitconfig ~/.gitconfig
 ln -sf $DOTFILES/git/gitignore_global ~/.gitignore_global
 ln -sf $DOTFILES/hg/hgrc ~/.hgrc
 ln -sf $DOTFILES/hg/hgignore_global ~/.hgignore_global
+ln -sf $DOTFILES/hg/hgext ~/.hgext
 ln -sf $DOTFILES/vim/vim ~/.vim
 ln -sf $DOTFILES/vim/vimrc ~/.vimrc
 ln -sf $DOTFILES/tmux/tmux.conf ~/.tmux.conf
@@ -41,4 +43,4 @@ ln -sf $DOTFILES/tmux/tmux.conf.local ~/.tmux.conf.local
 # ln -sf $DOTFILES/config ~/.config
 
 # Install antigen
-curl -L git.io/antigen > antigen.zsh
+curl -L git.io/antigen > ~/.antigen.zsh
