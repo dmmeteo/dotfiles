@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# git
+alias fire="git commit -m 'fire' && git push"
+
 # Docker
 alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 
