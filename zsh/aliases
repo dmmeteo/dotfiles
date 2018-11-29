@@ -22,3 +22,5 @@ else
     alias ls='ls -F --color'
 fi
 alias todo="todolist"
+
+alias tree="tree -aC"

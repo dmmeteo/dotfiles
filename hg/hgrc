@@ -13,3 +13,6 @@ hgchangelog = ~/.hgext/hgchangelog.py
 
 [changelog]
 filename = CHANGES
+
+[hooks]
+pre-commit = hg pull -u
