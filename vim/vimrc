@@ -42,7 +42,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'ambv/black'
 
 " Python-mode
-Plug 'python-mode/python-mode', {'branch': 'develop'}
+" Plug 'python-mode/python-mode', {'branch': 'develop'}
 
 call plug#end()
 
