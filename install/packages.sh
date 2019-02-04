@@ -38,4 +38,5 @@ sudo pip install \
 # Install node.js packages via Yarn
 yarn global add create-react-native-app
 
-
+# Install GO packages via go
+go install github.com/gammons/todolist

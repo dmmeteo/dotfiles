@@ -2,6 +2,7 @@
 source ~/.antigen.zsh
 
 # source ~/dotfiles/zsh/nyancat
+todolist list by projects
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/functions
 
