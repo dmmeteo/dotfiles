@@ -2,7 +2,10 @@
 source ~/.antigen.zsh
 
 # source ~/dotfiles/zsh/nyancat
-todolist list by projects
+# TODO bootstrap.sh to run here
+clear
+echo "TodoList: http://todolist.site/  |  VimCheatSheet: https://vim.rtorr.com/"
+todolist list agenda
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/functions
 
@@ -39,7 +42,7 @@ SPACESHIP_CHAR_PREFIX="\uf296"
 SPACESHIP_CHAR_SYMBOL=" \uf0e7"
 SPACESHIP_CHAR_SUFFIX=(" ")
 SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
-SPACESHIP_PROMPT_DEFAULT_PREFIX="$USER"
+SPACESHIP_PROMPT_DEFAULT_PREFIX="$USER "
 SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
 SPACESHIP_USER_SHOW="true"
 
