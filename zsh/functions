@@ -70,3 +70,4 @@ function o() {
 function gi() {
         curl -L -s https://www.gitignore.io/api/$@ ;
 }
+
