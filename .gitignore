@@ -5,4 +5,5 @@ vim/
 .DS_Store
 *.swp
 *.pyc
+*.log
 
