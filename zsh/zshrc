@@ -51,3 +51,13 @@ SPACESHIP_USER_SHOW="true"
 # Tell Antigen that you're done.
 antigen apply
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/new/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/new/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/new/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/new/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/new/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/new/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
