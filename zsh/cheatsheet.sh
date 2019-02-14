@@ -4,6 +4,6 @@
 
 function cheat() {
         echo "vim:\thttps://vim.rtorr.com/"
-        echo "tmux:\thttps://github.com/gpakosz/.tmux"
         echo "todo:\thttp://todolist.site/"
+        echo "tmux:\thttps://tmuxcheatsheet.com/"
 }

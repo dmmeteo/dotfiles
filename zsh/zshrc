@@ -12,6 +12,7 @@ source ~/dotfiles/zsh/cheatsheet.sh
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export LANG=en_US.UTF-8
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Load the oh-my-zsh's library.
