@@ -13,6 +13,7 @@ sudo rm -rf ~/.hgrc > /dev/null 2>&1
 sudo rm -rf ~/.hgignore_global > /dev/null 2>&1
 sudo rm -rf ~/.vim > /dev/null 2>&1
 sudo rm -rf ~/.vimrc > /dev/null 2>&1
+sudo rm -rf ~/.SpaceVim.d > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf.local > /dev/null 2>&1
 sudo rm -rf ~/.functions > /dev/null 2>&1
@@ -36,6 +37,7 @@ ln -sf $DOTFILES/hg/hgrc ~/.hgrc
 ln -sf $DOTFILES/hg/hgignore_global ~/.hgignore_global
 ln -sf $DOTFILES/hg/hgext ~/.hgext
 ln -sf $DOTFILES/vim/vim ~/.vim
+ln -sf $DOTFILES/vim/SpaceVim ~/.SpaceVim.d
 ln -sf $DOTFILES/vim/vimrc ~/.vimrc
 ln -sf $DOTFILES/tmux/tmux.conf ~/.tmux.conf
 ln -sf $DOTFILES/tmux/tmux.conf.local ~/.tmux.conf.local
