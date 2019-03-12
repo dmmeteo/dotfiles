@@ -1,3 +1,5 @@
+!vim/SpaceVim/autoload/myspacevim.vim
+!vim/SpaceVim/init.toml
 !vim/autoload/plug.vim
 !vim/vimrc
 vim/
