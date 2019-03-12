@@ -31,8 +31,7 @@
     vimcompatible = true
     enable_vimfiler_gitstatus = true
 		# Enable bootstarp scripts
-    bootstrap_before = "myspacevim#before"
-		bootstrap_after = "myspacevim#after"
+    bootstrap_after = "myconfig#after"
 
 # Enable autocomplete layer
 [[layers]]
