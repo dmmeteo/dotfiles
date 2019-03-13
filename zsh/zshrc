@@ -34,7 +34,8 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle akarzim/zsh-docker-aliases
 
 # Load the theme.
-antigen theme denysdovhan/spaceship-prompt
+# antigen theme denysdovhan/spaceship-prompt
+antigen theme ys
 
 # SpaceShip-prompt Customize
 # https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7
