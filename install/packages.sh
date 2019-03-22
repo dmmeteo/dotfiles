@@ -31,12 +31,12 @@ sudo pip install \
                 virtualenvwrapper \
                 black \
                 jedi \
+                isort \
                 flake8 \
-                pygments \ 
-                sudo pip install pep8 flake8 pyflakes isort yapf
+                pygments
 
 # Install node.js packages via Yarn
-yarn global add create-react-native-app
+yarn global add create-react-native-app docsify-cli
 
 # Install GO packages via go
 go install github.com/gammons/todolist
