@@ -39,7 +39,7 @@ Plug 'rking/ag.vim'
 Plug 'easymotion/vim-easymotion'
 
 " Black
-Plug 'ambv/black'
+" Plug 'ambv/black'
 
 " Python-mode
 " Plug 'python-mode/python-mode', {'branch': 'develop'}
