@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 # Declarete packages
-declare -a packages=(zsh vim nvim tree htop tmux node figlet yarn go install build-essential hyperfine)
+declare -a packages=(zsh vim neovim tree htop tmux node figlet yarn go install build-essential hyperfine)
 
 # Install packages
 if type -p brew > /dev/null; then
@@ -38,5 +38,3 @@ sudo pip install \
 # Install node.js packages via Yarn
 yarn global add create-react-native-app docsify-cli
 
-# Install GO packages via go
-go install github.com/gammons/todolist
