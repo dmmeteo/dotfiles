@@ -1,4 +1,6 @@
 #!/bin/sh
+# TODO: refactor the file like in https://www.anishathalye.com/2014/08/03/managing-your-dotfiles
+
 DOTFILES=$HOME/dotfiles
 
 
@@ -43,6 +45,10 @@ ln -sf $DOTFILES/tmux/tmux.conf ~/.tmux.conf
 ln -sf $DOTFILES/tmux/tmux.conf.local ~/.tmux.conf.local
 # ln -sf $DOTFILES/bashrc ~/.bashrc
 # ln -sf $DOTFILES/config ~/.config
+
+# Create dirs
+mkdir $HOME/.virtualenvs
+mkdir $HOME/projects
 
 # Install antigen
 curl -L git.io/antigen > ~/.antigen.zsh

@@ -1,17 +1,13 @@
 # Run zsh via antigen
 source ~/.antigen.zsh
 
-# source ~/dotfiles/zsh/nyancat
-# TODO bootstrap.sh to run here
-clear
-todolist list agenda
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/functions
 source ~/dotfiles/zsh/cheatsheet.sh
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export VIRTUALENVWRAPPER_PYTHON=$(which python)
 export LANG=en_US.UTF-8
 source /usr/local/bin/virtualenvwrapper.sh
 
@@ -39,11 +35,13 @@ antigen theme ys
 
 # SpaceShip-prompt Customize
 # https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7
+#
 SPACESHIP_PROMPT_ADD_NEWLINE="true"
 # SPACESHIP_CHAR_PREFIX="\uf296"
 # SPACESHIP_CHAR_SYMBOL=" \uf0e7"
 # SPACESHIP_CHAR_PREFIX="\uf0d0"
 # SPACESHIP_CHAR_SYMBOL=" ✨"
+#
 SPACESHIP_CHAR_SYMBOL="\uf0d0" 
 SPACESHIP_CHAR_SUFFIX=(" ")
 SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
@@ -55,12 +53,3 @@ SPACESHIP_USER_SHOW="true"
 antigen apply
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/new/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/new/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/new/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/new/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/new/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/new/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
