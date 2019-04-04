@@ -14,6 +14,7 @@ sudo apt-get -y install nmap
 sudo apt-get -y install python-dev
 sudo apt-get -y install python-pip
 sudo apt-get -y install ssh
+sudo apt-get -y install sshfs
 sudo apt-get -y install vim
 sudo apt-get -y install neovim
 sudo apt-get -y install whois
