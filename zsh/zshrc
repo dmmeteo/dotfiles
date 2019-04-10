@@ -7,7 +7,8 @@ source ~/dotfiles/zsh/cheatsheet.sh
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
-export VIRTUALENVWRAPPER_PYTHON=$(which python)
+# export VIRTUALENVWRAPPER_PYTHON=$(which python)
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export LANG=en_US.UTF-8
 source /usr/local/bin/virtualenvwrapper.sh
 
@@ -35,13 +36,11 @@ antigen theme ys
 
 # SpaceShip-prompt Customize
 # https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7
-#
 SPACESHIP_PROMPT_ADD_NEWLINE="true"
 # SPACESHIP_CHAR_PREFIX="\uf296"
 # SPACESHIP_CHAR_SYMBOL=" \uf0e7"
 # SPACESHIP_CHAR_PREFIX="\uf0d0"
 # SPACESHIP_CHAR_SYMBOL=" ✨"
-#
 SPACESHIP_CHAR_SYMBOL="\uf0d0" 
 SPACESHIP_CHAR_SUFFIX=(" ")
 SPACESHIP_CHAR_COLOR_SUCCESS="yellow"

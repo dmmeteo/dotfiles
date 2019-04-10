@@ -29,6 +29,8 @@ sudo pip install flake8
 sudo pip install Pygments
 sudo pip install em-keyboard
 sudo pip install isort
+sudo pip install autoflake
+sudo pip install yapf
 sudo pip install pipenv
 sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
@@ -49,5 +51,10 @@ rm -rf ./google-chrome-stable_current_amd64.deb
 curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
 
 # Install Docker.
-snap install docker
+sudo apt-get update
+sudo apt-get install docker-ce
+# to fix permission, maybe not necessary
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
 

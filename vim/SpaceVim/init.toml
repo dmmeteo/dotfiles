@@ -66,3 +66,9 @@
   name = "lang#python"
   checker = "flake8"
 
+[[layers]]
+  name = "lang#markdown"
+
+[[custom_plugins]]
+  name = 'Shougo/deoplete.nvim'
+  merged = 0

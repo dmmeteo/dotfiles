@@ -6,11 +6,14 @@ sudo easy_install pip
 # Upgrade pip to the latest version
 sudo pip install --upgrade pip
 sudo pip install pylint
+sudo pip install flake8
+sudo pip install Pygments
 sudo pip install em-keyboard
 sudo pip install isort
+sudo pip install autoflake
+sudo pip install yapf
 sudo pip install pipenv
 sudo pip install virtualenvwrapper
-sudo pip install Pygments
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
 
 # Check for Homebrew,
