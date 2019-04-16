@@ -1,8 +1,10 @@
 #!/bin/sh
 # TODO: refactor the file like in https://www.anishathalye.com/2014/08/03/managing-your-dotfiles
 
-DOTFILES=$HOME/dotfiles
+# Set zsh as defalut shell.
+chsh -s $(which zsh)
 
+DOTFILES=$HOME/dotfiles
 
 # Install packages
 # bash ~/dotfiles/install/packages.sh

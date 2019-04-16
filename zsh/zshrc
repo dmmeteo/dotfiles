@@ -12,6 +12,12 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export LANG=en_US.UTF-8
 source /usr/local/bin/virtualenvwrapper.sh
 
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$(pyenv root)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
