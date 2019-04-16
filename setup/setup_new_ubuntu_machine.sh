@@ -6,6 +6,7 @@ set -e
 # sudo apt-get update && sudo apt install -y python3.7
 
 # Install dev tools.
+sudo apt-get -y install zsh
 sudo apt-get -y install ant
 sudo apt-get -y install curl
 sudo apt-get -y install git

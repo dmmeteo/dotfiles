@@ -24,6 +24,7 @@ if test ! $(which brew); then
 fi
 # Update homebrew recipes
 brew update
+brew install zsh
 brew install ack  # A replacement for grep.
 brew install bash # Install latest version of Bash.
 brew install shellcheck  # Linter for shell scripts
