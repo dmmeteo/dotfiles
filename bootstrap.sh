@@ -1,13 +1,7 @@
 #!/bin/sh
 # TODO: refactor the file like in https://www.anishathalye.com/2014/08/03/managing-your-dotfiles
 
-# Set zsh as defalut shell.
-chsh -s $(which zsh)
-
 DOTFILES=$HOME/dotfiles
-
-# Install packages
-# bash ~/dotfiles/install/packages.sh
 
 # Delete existing dot files and folders
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
@@ -53,4 +47,11 @@ mkdir $HOME/.virtualenvs
 mkdir $HOME/projects
 
 # Install antigen
+# TODO: refactor to wget command
 curl -L git.io/antigen > ~/.antigen.zsh
+
+# Install packages
+# bash ~/dotfiles/install/packages.sh
+
+# Test packages
+# TODO: tests for installed packages
