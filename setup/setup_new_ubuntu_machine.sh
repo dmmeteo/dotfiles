@@ -1,5 +1,9 @@
 set -e
 
+# Upgrade
+sudo apt update
+sudo apt upgrade -y
+
 # Install dev tools.
 sudo apt-get -y install zsh
 sudo apt-get -y install tmux
@@ -33,7 +37,8 @@ sudo pip3 install pdbpp  # A powerful improvement to pdb CLI.
 # Use Node packages.
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get -y install yarn
+sudo apt-get update
+sudo apt-get -y install yarn
 sudo yarn global add docsify-cli
 sudo yarn global add gitmoji-cli
 
