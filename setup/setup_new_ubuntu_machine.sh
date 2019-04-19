@@ -27,6 +27,9 @@ sudo apt-get -y remove thunderbird  # I don't need thunderbird.
 # Install SpaceVim for neovim.
 curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
 
+# Setup zsh
+sudo chsh -s $(which zsh)
+
 # Use Python packages.
 sudo pip3 install Pygments
 sudo pip3 install em-keyboard
