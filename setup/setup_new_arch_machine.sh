@@ -17,6 +17,7 @@ yes | sudo pacman -Sy neovim
 yes | sudo pacman -Sy ctags
 yes | sudo pacman -Sy whois
 yes | sudo pacman -Sy tree
+yes | sudo pacman -Sy screenfetch
 yes | sudo pacman -Sy htop
 yes | sudo pacman -Sy nodejs
 yes | sudo pacman -Sy python-pip

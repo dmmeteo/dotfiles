@@ -41,6 +41,7 @@ brew install nmap
 brew install ssh-copy-id  # Easy way to set up key based login.
 braw install sshfs
 brew install tree
+brew install screenfetch
 brew install htop
 
 brew install vim  # Better than default vim.

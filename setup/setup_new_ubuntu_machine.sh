@@ -18,6 +18,7 @@ sudo apt-get -y install neovim
 sudo apt-get -y install ctags
 sudo apt-get -y install whois
 sudo apt-get -y install tree
+sudo apt-get -y install screenfetch
 sudo apt-get -y install htop
 sudo apt-get -y install nodejs
 sudo apt-get -y install python-pip
