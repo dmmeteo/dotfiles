@@ -14,13 +14,11 @@ alias rmve="rmvirtualenv"   # remove virtualenv
 alias lsve="lsvirtualenv"   # list virtualenvs
 
 # Other
-alias cat="pygmentize -g"
-alias ccat="/bin/cat $*" # for cases when you need plain `cat`
+alias c="pygmentize -g"
+alias tree="tree -aC"
+
 if [ "$(uname)" = "Darwin" ]; then
     alias ls='ls -FHG'
 else
     alias ls='ls -F --color'
 fi
-alias todo="todolist"
-
-alias tree="tree -aC"
