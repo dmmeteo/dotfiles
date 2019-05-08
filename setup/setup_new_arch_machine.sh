@@ -31,7 +31,6 @@ sudo chsh -s $(which zsh)
 
 # Use Python packages.
 sudo pip install Pygments
-sudo pip install em-keyboard
 sudo pip install pipenv
 sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
