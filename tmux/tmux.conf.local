@@ -279,3 +279,13 @@ bind-key -T copy-mode-vi WheelDownPane send-keys -X halfpage-down
 # make delay shorter
 set -sg escape-time 0
 
+# List of plugins
+set -g @tpm_plugins '          \
+  tmux-plugins/tpm             \
+  tmux-plugins/tmux-resurrect  \
+  tmux-plugins/tmux-continuum  \
+'
+set -g @continuum-restore 'on'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'

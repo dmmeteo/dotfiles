@@ -12,8 +12,7 @@ sudo rm -rf ~/.hgignore_global > /dev/null 2>&1
 sudo rm -rf ~/.vim > /dev/null 2>&1
 sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.SpaceVim.d > /dev/null 2>&1
-sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
-sudo rm -rf ~/.tmux.conf.local > /dev/null 2>&1
+sudo rm -rf ~/.tmux* > /dev/null 2>&1
 sudo rm -rf ~/.functions > /dev/null 2>&1
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 sudo rm -rf ~/.gitignore_global > /dev/null 2>&1
@@ -50,8 +49,12 @@ mkdir $HOME/projects
 # TODO: refactor to wget command
 curl -L git.io/antigen > ~/.antigen.zsh
 
+# Install tmp for tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Install packages
 # bash ~/dotfiles/install/packages.sh
 
 # Test packages
 # TODO: tests for installed packages
+# TODO: install plugins for zsh & tmux
