@@ -45,6 +45,7 @@ sudo apt-get update
 sudo apt-get -y install yarn
 sudo yarn global add docsify-cli
 sudo yarn global add gitmoji-cli
+sudo yarn global add ngrok
 
 # Install Google chrome.
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb

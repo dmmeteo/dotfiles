@@ -39,6 +39,7 @@ sudo pip install pdbpp  # A powerful improvement to pdb CLI.
 curl -o- -L https://yarnpkg.com/install.sh | bash
 sudo yarn global add docsify-cli
 sudo yarn global add gitmoji-cli
+sudo yarn global add ngrok
 
 # Install Google chrome.
 # TODO: install google-chrome
