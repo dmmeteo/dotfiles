@@ -54,3 +54,8 @@ rm -rf ./google-chrome-stable_current_amd64.deb
 
 # Install Docker.
 snap install docker
+# TODO: https://docs.docker.com/install/linux/docker-ce/ubuntu/
+# curl -fsSL https://get.docker.com -o get-docker.sh
+# sudo sh get-docker.sh
+# sudo usermod -aG docker your-user
+# sudo chmod o+rw /var/run/docker.sock

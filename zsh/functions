@@ -71,3 +71,9 @@ function gi() {
         curl -L -s https://www.gitignore.io/api/$@ ;
 }
 
+# Highlight manpages syntax
+man() {
+  /usr/bin/man $* | \
+    col -b | \
+    vim -R -c 'set ft=man nomod nolist' -
+}
