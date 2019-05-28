@@ -51,4 +51,6 @@ SPACESHIP_USER_SHOW="true"
 antigen apply
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
+bindkey -v
+
 clear && screenfetch
