@@ -38,6 +38,7 @@ sudo pip3 install pipenv
 sudo pip3 install awscli
 sudo pip3 install virtualenvwrapper
 sudo pip3 install pdbpp  # A powerful improvement to pdb CLI.
+sudo pip3 install see  # dir() alternative.
 
 # Use Node packages.
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -60,3 +61,10 @@ snap install docker
 # sudo sh get-docker.sh
 # sudo usermod -aG docker your-user
 # sudo chmod o+rw /var/run/docker.sock
+
+# Install pyenv
+curl https://pyenv.run | bash
+pyenv update
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash

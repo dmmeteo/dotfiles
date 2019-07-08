@@ -47,6 +47,10 @@ brew install jq # For JSON parsing in shell
 # Install Node.
 brew install node
 brew install yarn
+brew install nvm
+
+# Install pyenv
+brew install pyenv
 
 # Install Docker.
 brew install docker

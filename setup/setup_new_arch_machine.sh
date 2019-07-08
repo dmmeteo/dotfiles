@@ -47,3 +47,10 @@ sudo yarn global add ngrok
 
 # Install Docker.
 snap install docker
+
+# Install pyenv
+curl https://pyenv.run | bash
+pyenv update
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
