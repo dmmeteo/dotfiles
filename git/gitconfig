@@ -5,6 +5,9 @@ email = dmmeteo@gmail.com
 [core]
 editor = vim
 excludesfile = ~/.gitignore_global
+quotepath = off
+autocrlf = true
+safecrlf = false
 
 [diff]
 tool = vim -d
