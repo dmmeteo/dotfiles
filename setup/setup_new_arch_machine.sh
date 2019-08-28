@@ -34,6 +34,8 @@ sudo pip install Pygments
 sudo pip install pipenv
 sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
+sudo pip install see  # dir() alternative.
+sudo pip install tldr  # man alternative.
 
 # Use Node packages.
 curl -o- -L https://yarnpkg.com/install.sh | bash

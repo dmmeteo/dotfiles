@@ -39,6 +39,7 @@ sudo pip3 install awscli
 sudo pip3 install virtualenvwrapper
 sudo pip3 install pdbpp  # A powerful improvement to pdb CLI.
 sudo pip3 install see  # dir() alternative.
+sudo pip3 install tldr  # man alternative.
 
 # Use Node packages.
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
