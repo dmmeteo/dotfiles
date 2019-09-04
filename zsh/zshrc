@@ -35,9 +35,9 @@ antigen bundle command-not-found
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle akarzim/zsh-docker-aliases
+#antigen bundle zsh-users/zsh-autosuggestions
+#antigen bundle zsh-users/zsh-completions
+#antigen bundle akarzim/zsh-docker-aliases
 
 # Load the theme.
 # antigen theme denysdovhan/spaceship-prompt
@@ -59,8 +59,11 @@ SPACESHIP_USER_SHOW="true"
 
 # Tell Antigen that you're done.
 antigen apply
+
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
+# vim mode in shell
 bindkey -v
 
-clear && screenfetch
+clear
+screenfetch

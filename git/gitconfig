@@ -6,7 +6,7 @@
 	editor = vim
 	excludesfile = ~/.gitignore_global
 	quotepath = off
-	autocrlf = true
+	autocrlf = false
 	safecrlf = false
 
 [diff]
