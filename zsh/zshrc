@@ -3,7 +3,6 @@ source ~/.antigen.zsh
 
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/functions
-source ~/dotfiles/zsh/cheatsheet.sh
 source ~/dotfiles/zsh/exports
 
 # Load the oh-my-zsh's library.
