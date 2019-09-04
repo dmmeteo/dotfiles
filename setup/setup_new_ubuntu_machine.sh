@@ -27,7 +27,7 @@ sudo apt-get -y remove thunderbird  # I don't need thunderbird.
 sudo apt-get -y remove pidgin  # I don't need pidgin.
 
 # Install SpaceVim for neovim.
-curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
+curl -sLf https://spacevim.org/install.sh | bash
 
 # Setup zsh
 sudo chsh -s $(which zsh)
