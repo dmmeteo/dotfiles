@@ -31,3 +31,5 @@ if [ "$(uname)" = "Darwin" ]; then
 else
     alias ls='ls -F --color'
 fi
+
+alias off="systemctl suspend"

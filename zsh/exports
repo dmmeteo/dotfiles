@@ -1,0 +1,54 @@
+export EDITOR=vim
+# export GITHUB_ACCESS_TOKEN=`cat ~/.config/.gh-token`
+
+# Setup locales #
+# If you'll got locale related error by `perl -e exit`, you should generate
+# it by code below:
+#
+# ```shell
+# sudo locale-gen
+# sudo dpkg-reconfigure locales
+# ```
+#
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_TYPE=en_US.UTF-8
+export BROWSER=chromium
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# Path
+export PATH=/usr/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=$DOTFILES/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
+
+# Node
+export NODE_ENV=development
+export PATH=./node_modules/.bin:$PATH
+
+# Go
+export GOPATH=$HOME/.go
+export PATH=$GOPATH/bin:$PATH
+
+# Ruby
+export PATH=$HOME/.rbenv/bin:$PATH
+
+# Node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Python
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+source /usr/local/bin/virtualenvwrapper.sh
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
