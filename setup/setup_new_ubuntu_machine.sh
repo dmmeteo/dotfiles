@@ -60,8 +60,9 @@ snap install docker
 # TODO: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 # curl -fsSL https://get.docker.com -o get-docker.sh
 # sudo sh get-docker.sh
-# sudo usermod -aG docker your-user
-# sudo chmod o+rw /var/run/docker.sock
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo chgrp -R docker /var/run/docker.sock
 
 # Install pyenv
 curl https://pyenv.run | bash

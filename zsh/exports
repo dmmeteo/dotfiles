@@ -51,4 +51,5 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=0
 
