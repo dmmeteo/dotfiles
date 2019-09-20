@@ -9,6 +9,7 @@ sudo pip install Pygments
 sudo pip install pipenv
 sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
+sudo pip install pip-tool
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -38,6 +39,7 @@ brew install tree
 brew install screenfetch
 brew install htop
 brew install tldr  # man alternative.
+brew install hub
 
 brew install vim  # Better than default vim.
 brew install neovim

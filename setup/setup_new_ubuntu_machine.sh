@@ -40,6 +40,7 @@ sudo pip3 install virtualenvwrapper
 sudo pip3 install pdbpp  # A powerful improvement to pdb CLI.
 sudo pip3 install see  # dir() alternative.
 sudo pip3 install tldr  # man alternative.
+sudo pip3 install pip-tool
 
 # Use Node packages.
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -54,6 +55,25 @@ sudo yarn global add ngrok
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm -rf ./google-chrome-stable_current_amd64.deb
+
+# Install Postman latest version.
+wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
+sudo tar -xzf postman-linux-x64.tar.gz -C /opt
+rm -rf postman-linux-x64.tar.gz
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+cat << EOF > ~/.local/share/applications/postman2.desktop
+[Desktop Entry]
+Name=Postman
+GenericName=API Client
+X-GNOME-FullName=Postman API Client
+Comment=Make and view REST API calls and responses
+Keywords=api;
+Exec=/opt/Postman/Postman
+Terminal=false
+Type=Application
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Categories=Development;Utilities;
+EOF
 
 # Install Docker.
 snap install docker
@@ -70,3 +90,6 @@ pyenv update
 
 # Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+# Install hub
+sudo snap install hub --classic

@@ -21,7 +21,7 @@ yes | sudo pacman -Sy screenfetch
 yes | sudo pacman -Sy htop
 yes | sudo pacman -Sy nodejs
 yes | sudo pacman -Sy python-pip
-sudo apt-get -y remove thunderbird  # I don't need thunderbird.
+yes | sudo pacman -Sy hub
 
 # Install SpaceVim for neovim.
 curl -sLf https://spacevim.org/install.sh | bash
@@ -36,6 +36,7 @@ sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
 sudo pip install see  # dir() alternative.
 sudo pip install tldr  # man alternative.
+sudo pip install pip-tool
 
 # Use Node packages.
 curl -o- -L https://yarnpkg.com/install.sh | bash
@@ -49,6 +50,11 @@ sudo yarn global add ngrok
 
 # Install Docker.
 snap install docker
+# curl -fsSL https://get.docker.com -o get-docker.sh
+# sudo sh get-docker.sh
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo chgrp -R docker /var/run/docker.sock
 
 # Install pyenv
 curl https://pyenv.run | bash
