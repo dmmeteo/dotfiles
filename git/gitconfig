@@ -20,6 +20,7 @@
 	ci = commit
 	type = cat-file -t
 	dump = cat-file -p
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/vim,osx,emacs,linux,macos,windows,pycharm,virtualenv,sublimetext,visualstudiocode,$@ ;}; gi"
 
 [color]
 	ui = true
