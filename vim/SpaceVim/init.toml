@@ -16,7 +16,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "SpaceVim"
+    colorscheme = "OceanicNext"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -36,6 +36,11 @@
 		# Enable bootstarp scripts
     bootstrap_after = "myconfig#after"
     automatic_update = true
+
+# add custom_plugins: https://github.com/mhartington/oceanic-next
+[[custom_plugins]]
+  name = "mhartington/oceanic-next"
+  merged = 0
 
 # Enable autocomplete layer
 [[layers]]
