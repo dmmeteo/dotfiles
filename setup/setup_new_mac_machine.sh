@@ -40,6 +40,7 @@ brew install screenfetch
 brew install htop
 brew install tldr  # man alternative.
 brew install hub
+brew install pass
 
 brew install vim  # Better than default vim.
 brew install neovim

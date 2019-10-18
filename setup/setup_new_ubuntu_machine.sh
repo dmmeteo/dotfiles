@@ -23,6 +23,7 @@ sudo apt-get -y install htop
 sudo apt-get -y install nodejs
 sudo apt-get -y install python-pip
 sudo apt-get -y install python3-pip
+sudo apt-get -y install pass
 sudo apt-get -y remove thunderbird  # I don't need thunderbird.
 sudo apt-get -y remove pidgin  # I don't need pidgin.
 

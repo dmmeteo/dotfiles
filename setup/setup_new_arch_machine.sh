@@ -22,6 +22,7 @@ yes | sudo pacman -Sy htop
 yes | sudo pacman -Sy nodejs
 yes | sudo pacman -Sy python-pip
 yes | sudo pacman -Sy hub
+yes | sudo pacman -Sy pass
 
 # Install SpaceVim for neovim.
 curl -sLf https://spacevim.org/install.sh | bash

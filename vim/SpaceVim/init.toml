@@ -37,10 +37,12 @@
     bootstrap_after = "myconfig#after"
     automatic_update = true
 
-# add custom_plugins: https://github.com/mhartington/oceanic-next
-[[custom_plugins]]
-  name = "mhartington/oceanic-next"
-  merged = 0
+[[layers]]
+  name = "default"
+
+# https://spacevim.org/layers/sudo/
+[[layers]]
+  name = "sudo"
 
 # Enable autocomplete layer
 [[layers]]
@@ -84,4 +86,9 @@
 
 [[custom_plugins]]
   name = 'Xuyuanp/nerdtree-git-plugin'
+  merged = 0
+
+# add custom_plugins: https://github.com/mhartington/oceanic-next
+[[custom_plugins]]
+  name = "mhartington/oceanic-next"
   merged = 0
