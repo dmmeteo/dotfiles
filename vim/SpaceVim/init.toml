@@ -80,6 +80,9 @@
 [[layers]]
   name = "lang#markdown"
 
+[[layers]]
+  name = "lang#groovy"
+
 [[custom_plugins]]
   name = 'Shougo/deoplete.nvim'
   merged = 0

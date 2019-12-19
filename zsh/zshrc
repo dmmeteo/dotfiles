@@ -42,3 +42,4 @@ bindkey -v
 
 clear
 screenfetch
+stty icrnl
