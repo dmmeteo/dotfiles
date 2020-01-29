@@ -20,7 +20,7 @@
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
-    enable_guicolors = false
+    enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "nil"
@@ -28,7 +28,7 @@
     buffer_index_type = 4
     windows_index_type = 3
     enable_tabline_filetype_icon = false
-    enable_statusline_display_mode = false
+    enable_statusline_display_mode = true
     statusline_unicode_symbols = false
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
@@ -76,6 +76,7 @@
 [[layers]]
   name = "lang#python"
   checker = "flake8"
+  enable_typeinfo = true
 
 [[layers]]
   name = "lang#markdown"
@@ -95,3 +96,6 @@
 [[custom_plugins]]
   name = "mhartington/oceanic-next"
   merged = 0
+
+[[layers]]
+  name = "colorscheme"
