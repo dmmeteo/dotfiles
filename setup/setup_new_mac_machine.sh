@@ -41,6 +41,7 @@ brew install htop
 brew install tldr  # man alternative.
 brew install hub
 brew install pass
+brew install the_silver_searcher
 
 brew install vim  # Better than default vim.
 brew install neovim
