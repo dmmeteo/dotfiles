@@ -5,6 +5,12 @@ source ~/dotfiles/zsh/aliases
 source ~/dotfiles/zsh/functions
 source ~/dotfiles/zsh/exports
 
+# Load the work aliases or other stuff
+WORK_STUFF=$HOME/.work
+if [ -f "$WORK_STUFF" ]; then
+  source $WORK_STUFF
+fi
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
