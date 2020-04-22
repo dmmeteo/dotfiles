@@ -36,6 +36,7 @@
 		# Enable bootstarp scripts
     bootstrap_after = "myconfig#after"
     automatic_update = true
+    pymode_python = "python3"
 
 [[layers]]
   name = "default"
@@ -75,8 +76,6 @@
 
 [[layers]]
   name = "lang#python"
-  checker = "flake8"
-  enable_typeinfo = true
 
 [[layers]]
   name = "lang#markdown"

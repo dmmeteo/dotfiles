@@ -20,6 +20,7 @@ alias pmm="python manage.py migrate"
 alias pms="python manage.py shell"
 alias pmsi="python manage.py shell_plus --ipython --print-sql"
 alias pmr="python manage.py runserver"
+alias pmr+="python manage.py runserver_plus"
 alias pmmk="python manage.py makemigrations"
 
 # Other
