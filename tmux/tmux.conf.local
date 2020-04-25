@@ -306,6 +306,17 @@ bind -T root WheelDownPane if-shell -F -t = "#{alternate_on}" "select-pane -t =;
 bind-key -T copy-mode-vi WheelUpPane send-keys -X halfpage-up
 bind-key -T copy-mode-vi WheelDownPane send-keys -X halfpage-down
 
+# unbind arrow keys
+unbind Up     
+unbind Down   
+unbind Left   
+unbind Right  
+
+unbind C-Up   
+unbind C-Down 
+unbind C-Left 
+unbind C-Right
+
 # make delay shorter
 set -sg escape-time 0
 
@@ -315,6 +326,8 @@ set -g @tpm_plugins '          \
   tmux-plugins/tmux-resurrect  \
   tmux-plugins/tmux-continuum  \
 '
+
+# List of plugins options
 set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
 set -g @continuum-save-interval '5'
