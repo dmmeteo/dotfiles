@@ -77,3 +77,12 @@ man() {
     col -b | \
     vim -R -c 'set ft=man nomod nolist' -
 }
+
+# https://askubuntu.com/questions/1196742/how-can-i-use-kazam-screencaster-in-terminal
+# - use Super+Ctrl+p to Pause/Resume recording
+# - and Super+Ctrl+f to stop recording
+function kz () { 
+ kazam --silent &> /dev/null & 
+ sleep 1 
+ xdotool key 'Super+Ctrl+r'; 
+}

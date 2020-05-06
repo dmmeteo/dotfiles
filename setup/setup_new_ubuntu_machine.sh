@@ -27,6 +27,8 @@ sudo apt-get -y install pass
 sudo apt-get -y install silversearcher-ag  # the silver searcher
 sudo apt-get -y remove thunderbird  # I don't need thunderbird.
 sudo apt-get -y remove pidgin  # I don't need pidgin.
+sudo apt-get -y install kazam  # capture screen
+sudo apt-get -y install xdotool
 
 # Install SpaceVim for neovim.
 curl -sLf https://spacevim.org/install.sh | bash
