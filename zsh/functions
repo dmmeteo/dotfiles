@@ -85,4 +85,8 @@ function kz () {
  kazam --silent &> /dev/null & 
  sleep 1 
  xdotool key 'Super+Ctrl+r'; 
+ echo "
+ - use Super+Ctrl+p to Pause/Resume recording\n
+ - and Super+Ctrl+f to stop recording\n
+ "
 }

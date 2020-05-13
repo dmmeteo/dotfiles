@@ -34,3 +34,5 @@ else
 fi
 
 alias off="systemctl suspend"
+
+alias dotfiles="cd ~/dotfiles"
