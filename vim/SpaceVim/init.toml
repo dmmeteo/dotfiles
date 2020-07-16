@@ -52,6 +52,9 @@
   auto-completion-tab-key-behavior = "cycle"
 
 [[layers]]
+  name = 'git'
+
+[[layers]]
   name = 'unite'
 
 [[layers]]

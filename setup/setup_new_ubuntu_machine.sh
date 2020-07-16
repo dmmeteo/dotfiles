@@ -1,5 +1,8 @@
 set -e
 
+# Add PPA's
+sudo add-apt-repository ppa:neovim-ppa/stable 
+
 # Upgrade
 sudo apt update
 sudo apt upgrade -y
