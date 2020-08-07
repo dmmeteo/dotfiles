@@ -12,12 +12,11 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    runs-on: 	ubuntu-20.04
+    runs-on: 	ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: |
-        ./bootstrap.sh
-        ./setup/setup_new_ubuntu_machine.sh
+    - name: Bootstap dotfiles
+      run: "./bootstrap.sh"
+    - name: Setup Ubuntu machine
+      run: "./setup/setup_new_ubuntu_machine.sh"
