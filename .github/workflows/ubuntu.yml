@@ -18,4 +18,6 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: ./bootstrap.sh
+      run: |
+        ./bootstrap.sh
+        ./setup/setup_new_ubuntu_machine.sh
