@@ -1,4 +1,7 @@
-set -e
+#!/usr/bin/env bash
+
+# start trace
+set -ex
 
 # Add PPA's
 sudo add-apt-repository ppa:neovim-ppa/stable 
@@ -59,14 +62,14 @@ sudo yarn global add gitmoji-cli
 sudo yarn global add ngrok
 
 # Install Google chrome.
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-rm -rf ./google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/google-chrome-stable_current_amd64.deb
+sudo dpkg -i ~/google-chrome-stable_current_amd64.deb
+sudo rm -rf ~/google-chrome-stable_current_amd64.deb
 
 # Install Postman latest version.
-wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
-sudo tar -xzf postman-linux-x64.tar.gz -C /opt
-rm -rf postman-linux-x64.tar.gz
+wget https://dl.pstmn.io/download/latest/linux64 -O ~/postman-linux-x64.tar.gz
+sudo tar -xzf ~/postman-linux-x64.tar.gz -C /opt
+rm -rf ~/postman-linux-x64.tar.gz
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
 mkdir -p ~/.local/share/applications/
 cat << EOF > ~/.local/share/applications/postman2.desktop
@@ -84,16 +87,19 @@ Categories=Development;Utilities;
 EOF
 
 # Install Docker.
-snap install docker
+sudo snap install docker
 # TODO: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 # curl -fsSL https://get.docker.com -o get-docker.sh
 # sudo sh get-docker.sh
-sudo groupadd docker
+sudo groupadd -f docker
 sudo usermod -aG docker $USER
 sudo chgrp -R docker /var/run/docker.sock
 
 # Install pyenv
 curl https://pyenv.run | bash
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 pyenv update
 
 # Install nvm
@@ -101,3 +107,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 # Install hub
 sudo snap install hub --classic
+
+
+# end trace
+set +ex

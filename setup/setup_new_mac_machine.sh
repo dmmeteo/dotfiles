@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -exuo pipefail
 
 # pip is not installed by default on mac.
 sudo easy_install pip

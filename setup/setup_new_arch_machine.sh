@@ -1,4 +1,5 @@
-set -e
+#!/usr/bin/env bash
+set -exuo pipefail
 
 # Upgrade
 yes | sudo pacman -Syu
