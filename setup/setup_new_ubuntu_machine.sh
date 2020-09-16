@@ -47,7 +47,7 @@ sudo pip3 install virtualenvwrapper
 sudo pip3 install pdbpp  # A powerful improvement to pdb CLI.
 sudo pip3 install see  # dir() alternative.
 sudo pip3 install tldr  # man alternative.
-sudo pip3 install pip-tool
+sudo pip3 install pip-tools
 
 # Use Node packages.
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
