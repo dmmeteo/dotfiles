@@ -1,8 +1,9 @@
-!vim/SpaceVim/autoload/myspacevim.vim
+vim/*
+!vim/SpaceVim
 !vim/SpaceVim/init.toml
+!vim/SpaceVim/autoload/myspacevim.vim
 !vim/autoload/plug.vim
 !vim/vimrc
-vim/
 
 .DS_Store
 *.swp
