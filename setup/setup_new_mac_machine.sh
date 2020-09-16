@@ -9,7 +9,7 @@ sudo pip install Pygments
 sudo pip install pipenv
 sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
-sudo pip install pip-tool
+sudo pip install pip-tools
 
 # Check for Homebrew,
 # Install if we don't have it

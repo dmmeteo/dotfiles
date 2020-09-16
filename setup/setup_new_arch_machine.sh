@@ -39,7 +39,7 @@ sudo pip install virtualenvwrapper
 sudo pip install pdbpp  # A powerful improvement to pdb CLI.
 sudo pip install see  # dir() alternative.
 sudo pip install tldr  # man alternative.
-sudo pip install pip-tool
+sudo pip install pip-tools
 
 # Use Node packages.
 curl -o- -L https://yarnpkg.com/install.sh | bash
