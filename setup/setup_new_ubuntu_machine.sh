@@ -27,7 +27,6 @@ sudo apt-get -y install tree
 sudo apt-get -y install screenfetch
 sudo apt-get -y install htop
 sudo apt-get -y install nodejs
-sudo apt-get -y install python-pip
 sudo apt-get -y install python3-pip
 sudo apt-get -y install pass
 sudo apt-get -y install silversearcher-ag  # the silver searcher
