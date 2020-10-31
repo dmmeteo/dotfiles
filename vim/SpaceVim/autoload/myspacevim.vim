@@ -1,7 +1,7 @@
 function! myspacevim#before() abort
     let g:neomake_python_flake8_maker = {
         \ 'args': [
-            \'--ignore=E221,E241,E272,E251,W702,E203,E201,E202',
+            \'--ignore=E221,E241,E272,E251,W702,E203,E201,E202,W503,W504',
             \'--format=default',
             \'--max-line-length=120',
           \],

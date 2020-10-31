@@ -46,6 +46,8 @@ antigen apply
 # vim mode in shell
 bindkey -v
 
-clear
-screenfetch
+# TODO: create custom MOTD for login and for start terminal
+cat /var/run/motd.dynamic
+screenfetch -N
+
 stty icrnl
